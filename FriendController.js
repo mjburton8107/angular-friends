@@ -431,7 +431,15 @@ angular.module('angularFriends').controller('mainCtrl', function($scope){
         "$$hashKey": "02U"
       }
     ]
- $scope.sortProp = "name"
+ // $scope.sortProp = "name"
  $scope.sortDirection = "-"
+
+ $scope.sortOptions = {
+   "name": "Name",
+   "friend_count": "#Friends" ,
+   "current_location.city": "City",
+   "current_location.state": "State",
+   "current_location.country": "Country",
+ }
 
 });

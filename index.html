@@ -22,17 +22,17 @@
         <input class="form-control" placeholder="Search Location" ng-model="friendFilter.current_location.name">
 
 
-        <select class="input-medium" ng-model="sortProp">
-          <option value="name">Name</option>
+        <select class="input-medium" ng-model="sortProp" ng-options="key as value for (key, value) in sortOptions">
+          <!-- <option value="name">Name</option>
           <option value="friend_count">#Friends</option>
           <option value="current_location.city">City</option>
           <option value="current_location.state">State</option>
-          <option value="current_location.country">Country</option>
+          <option value="current_location.country">Country</option> -->
         </select>
 
         <select class="input-medium" ng-model="sortDirection">
-          <option value="+">Descending</option>
-          <option value="-">Ascending</option>
+          <option value="-">Descending</option>
+          <option value="+">Ascending</option>
         </select>
 
       </div>
